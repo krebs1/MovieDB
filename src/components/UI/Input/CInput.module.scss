@@ -1,0 +1,19 @@
+.InputWrapper{
+  display: flex;
+  flex-direction: column;
+  &_label{
+    font: var(--font-light);
+    color: var(--color-reg);
+    display: flex;
+    flex-direction: column;
+  }
+  &_input{
+    font: var(--font-light);
+    color: var(--color-reg);
+    padding: 10px;
+  }
+  &_error{
+    color: #fe0000;
+    font: var(--font-light);
+  }
+}

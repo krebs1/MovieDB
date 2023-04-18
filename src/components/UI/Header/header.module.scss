@@ -1,0 +1,47 @@
+.headerWrapper{
+    padding: 20px 40px;
+    width: 100%;
+    background-color: #424856;
+    flex: 0 1 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &>*{
+        margin-right: 30px;
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+    &_logoWrapper{
+        text-align: center;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+
+        span{
+            color: var(--color-light);
+            font: var(--font-bold);
+
+            &:hover{
+                transform: scale(1.05);
+                transition: transform .1s;
+                z-index: 3;
+            }
+        }
+    }
+    &_searchWrapper{
+        max-width: 300px;
+    }
+    &_navBtns{
+        background: none;
+        border: none;
+        color: var(--color-light);
+        font: var(--font-light);
+
+        &:hover{
+            text-decoration: underline;
+            text-underline-offset: 3px;
+        }
+    }
+}

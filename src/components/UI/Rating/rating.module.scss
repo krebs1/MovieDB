@@ -1,0 +1,23 @@
+.ratingWrapper{
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+
+  &_value{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    color: var(--color-light);
+    font: var(--font-light);
+  }
+}
+
+.greenRating{
+  background-color: #35b533;
+}
+.greyRating{
+  background-color: #71736f;
+}
+.redRating{
+  background-color: #fe0000;
+}

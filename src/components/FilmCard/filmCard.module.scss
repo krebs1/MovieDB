@@ -1,0 +1,66 @@
+.filmCard{
+  position: relative;
+
+  &:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 50px 20px rgba(0, 0, 0, 0.83);
+    transition: transform .1s;
+    z-index: 3;
+  }
+  &:last-child{
+    margin-right: 0;
+  }
+  &_infoWrapper{
+    z-index: 1000;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.71);
+    backdrop-filter: blur(5px);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &_header{
+      display: flex;
+      justify-content: space-between;
+
+      &_rating{
+        height: 30px;
+        width: 30px;
+      }
+      &_btns{
+        display: flex;
+
+        & > *{
+          width: 30px;
+          height: 30px;
+          margin-right: 15px;
+
+          &:hover{
+            transform: scale(1.05);
+            transition: transform .1s;
+            z-index: 3;
+          }
+          &:last-child{
+            margin-right: 0;
+          }
+          &>*{
+            width: 20px;
+            height: 20px;
+          }
+        }
+      }
+    }
+    &_button{
+      color: var(--color-light);
+      font: var(--font-light);
+    }
+    &_name{
+      color: var(--color-light);
+      font: var(--font-reg);
+    }
+  }
+}

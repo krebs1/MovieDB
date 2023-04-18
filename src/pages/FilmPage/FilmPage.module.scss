@@ -1,0 +1,48 @@
+.FilmPageWrapper{
+  &_mainWrapper{
+    display: flex;
+
+    &_videoWrapper{
+      margin-right: 30px;
+      width: 30%;
+
+      position: relative;
+
+      &>iframe{
+        position: absolute;
+      }
+    }
+    &_info{
+      align-self: end;
+      width: 60%;
+
+      &_name{
+        color: var(--color-dark);
+        font: var(--font-bold);
+        margin-bottom: 10px;
+      }
+      &_mainInfo{
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+        &>*{
+          margin-right: 20px;
+          color: var(--color-reg);
+          font: var(--font-reg);
+          font-size: 18px;
+        }
+      }
+      &_description{
+        color: var(--color-reg);
+        font: var(--font-light);
+      }
+    }
+  }
+  &_personsWrapper{
+    &_personList{
+      &_category{
+
+      }
+    }
+  }
+}
